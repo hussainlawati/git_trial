@@ -1,0 +1,12 @@
+  
+normal_list = ['apples', 'bananas', 'tofu', 'cats', 'skzd', 'jiosajd']
+beauiful_list=""
+for i in range(len(normal_list)):
+    if i==0:
+        beauiful_list+= normal_list[i][0].upper() + normal_list[i][1:len(normal_list[i])] + ","
+    elif i==len(normal_list)-1:
+        beauiful_list +=" and " + str(normal_list[i])+"."
+    else: 
+        beauiful_list+=" " + str(normal_list[i]) +","
+        
+print(beauiful_list)
